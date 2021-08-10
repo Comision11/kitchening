@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    background-image: url('/images/bg-body.png');
+}
+
+header img {
+    display: block;
+    border-radius: 50%;
+    border: 1.5px solid #bbbfbe;
+    margin: 15px auto 30px;
+    width: 180px;
+}
+
+header nav input{
+    display: none;
+}
+
+header nav ul li a{
+    display: inline-block;
+    color: white;
+}
+
+header nav label {
+    display: block;
+    width: 35px;
+    background-color: gray;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 0 auto 10px;
+    text-align: center;
+}
+
+header nav ul li {
+    text-align: center;
+    width: 100%;
+    background-color: #63645d;
+    margin-bottom: 1px;
+    padding: 10px;
+}
+
+header {
+    margin-bottom: 15px;
+}
+
+article {
+    width: 100%;
+}
+
+article .image-container {
+    position: relative;
+    text-align: center;
+    
+}
+
+article .image-container img.photo {
+    width: 100%;
+}
+
+article .image-container img.label {
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+article a{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    right: 0;
+    background-color: #000000ad;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    
+    
+}
+
+article .title{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+article p {
+    margin-bottom: 10px;
+}
+
+article button {
+    margin-bottom: 10px;
+    background-color: #3b3b3b;
+    color: white;
+    padding: 5px;
+    border: none;
+}
+
+footer {
+    text-align: center;
+}
+
+footer nav ul li a{
+    display: inline-block;
+    color: white;
+}
+
+footer nav ul li {
+    text-align: center;
+    width: 100%;
+    background-color: #63645d;
+    margin-bottom: 1px;
+    padding: 10px;
+}
+
+.banner img {
+    display: none;
+}
+
+
+/* Tablet */
+@media (min-width: 481px) {
+
+    /* header */
+    header nav label {
+        display: none;
+    }
+
+    header nav ul {
+        display: block;
+        margin-left: 2%;
+    }
+
+    header nav ul li {
+        width: 15.5%;
+        float: left;
+        margin-right: 1%;
+        margin-bottom: 10px;
+    }
+
+    .banner img {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    article {
+        width: 49%;
+        float: left;
+        margin-right: .5%;
+        margin-left: .5%;
+       
+    }
+
+    section.products {
+        overflow: hidden;
+       
+    }
+
+    main {
+        margin-bottom: 10px;
+    }
+
+    .banner img {
+        display: block;
+        width: 99%;
+        margin-left: .5%;     
+    }
+
+
+    
+}
+
+
+@media (min-width: 769px) {
+
+    article {
+        width: 32%;
+        margin-right: 0.83%;
+    }
+
+    footer {
+        background-color: red;
+        height: 150px;
+        padding: 65px;
+        border-radius: 20px 20px 0 0;
+
+
+    }
+
+    footer nav ul li {
+        display: inline;
+        background-color: transparent;
+
+    }
+
+    body {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+}
